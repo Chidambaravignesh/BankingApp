@@ -31,4 +31,4 @@ jobs:
         password: ${{secrets.DOCKER_PASSWORD}}
         
     - name: Run with Docker
-      run: docker run -p 8080:8080 spring-boot:banking
+      run: docker run -p 8080:8080 cvigneshece19/test-banking-app
