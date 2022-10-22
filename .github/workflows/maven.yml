@@ -29,3 +29,6 @@ jobs:
         dockerfile: Dockerfile
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_PASSWORD}}
+        
+    - name: Run with Docker
+      run: docker run -p 8080:8080 spring-boot:banking
